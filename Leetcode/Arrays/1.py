@@ -5,7 +5,7 @@ class Solution:
 
         map={}
         for i,n in enumerate(nums):
-            diff=target-n
+            diff=target-n                       #hashmap
             if diff in map:
                 return [map[diff],i]
             map[n]=i
